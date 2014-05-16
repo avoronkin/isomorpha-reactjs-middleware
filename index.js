@@ -9,6 +9,9 @@ module.exports = function (params) {
         res.renderComponent = function (Component, data) {
 
             if (typeof window !== 'undefined') {
+                if(params.exportReact){//react dev tools support
+                    window.React = React; 
+                }
                 React.renderComponent(Component(data), document.getElementById(params.rootElId));
             } else {
                 var html = React.renderComponentToString(Component(data));
