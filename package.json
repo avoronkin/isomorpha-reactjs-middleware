@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/avoronkin/isomorpha-reactjs-middleware/issues"
   },
-  "homepage": "https://github.com/avoronkin/isomorpha-reactjs-middleware"
+  "homepage": "https://github.com/avoronkin/isomorpha-reactjs-middleware",
+  "dependencies": {
+    "react": "~0.*.*"
+  }
 }
