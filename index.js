@@ -1,5 +1,6 @@
 var React = require('react');
 var firstRender = true;
+var _ = require('lodash');
 
 module.exports = function (params) {
 
@@ -7,6 +8,7 @@ module.exports = function (params) {
         req.firstRender = firstRender;
 
         res.renderComponent = function (Component, data) {
+            data = _.extend({}, data, res.locals);
 
             if (typeof window !== 'undefined') {
                 if(params.exportReact){//react dev tools support
@@ -29,3 +31,4 @@ module.exports = function (params) {
         next();
     };
 };
+

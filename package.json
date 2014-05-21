@@ -1,6 +1,6 @@
 {
   "name": "isomorpha-reactjs-middleware",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React.js middleware for Isomorpha",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/avoronkin/isomorpha-reactjs-middleware",
   "dependencies": {
-    "react": "~0.*.*"
+    "react": "~0.*.*",
+    "lodash": "~2.*.*"
   }
 }
