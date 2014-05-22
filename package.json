@@ -1,6 +1,6 @@
 {
   "name": "isomorpha-reactjs-middleware",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React.js middleware for Isomorpha",
   "main": "index.js",
   "scripts": {

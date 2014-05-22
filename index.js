@@ -14,6 +14,9 @@ module.exports = function (params) {
                 if(params.exportReact){//react dev tools support
                     window.React = React; 
                 }
+
+                document.title = data.title ? data.title : '';
+
                 React.renderComponent(Component(data), document.getElementById(params.rootElId));
             } else {
                 var html = React.renderComponentToString(Component(data));
